@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Alan Wu's Bio Page</title>
+    <style>
+    .content{
+        width:60%;
+        min-height:100vh;
+        background-color:white;
+        margin: 0 auto;
+        position:relative;
+        z-index:1;
+        margin-top: 70px;
+    }
+    .intro {
+        width:43%;
+        display:inline-block;
+    }
+    .photo {
+        display:flex;
+        justify-content:space-around;
+        width:100%;
+    }
+    .photo img{
+        height:200px;
+        width:auto;
+    }
+    
+    body {
+        background-color: #180C10;
+        background-image: url(backgnd2.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: -1;
+        font-family: 'Times New Roman', Times, serif;
+        color: #B2B2B2
+    }
+
+    nav {
+        background-color: #1f2224;
+        padding: 10px 0;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px 20px;
+        background-color: #34363b;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        background-color: #34a58e;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="content" style="background-color: #361d1e ">
+        
+        <h1 style="line-height:1.5;text-align:center;">Self introduction</h1>
+        <p style="text-align:center;line-height:10px;font-size:20px">Yuzhe Wu</p>
+        <p style="text-align:center;line-height:10px;font-size:20px">E-mail: alanwyz@bu.edu</p>
+
+        <div class="photo">
+            <img src="Hamilton.png" style="width:auto;height:200px;" alt="self image 1" title="This is a photo of me.">
+            <img src="img_self.jpg" style="width:auto;height:200px;" alt="self image 2" title="This is a photo of my life.">
+        </div>
+
+        <p style="font-size: 90%; text-align: center; color:#797979">Hint: You can place the mouse over the image to obtain tool information</p>
+
+        <div class="intro" style="background-color: #f8633b; color: #D4D4D4; border: 2px solid white; padding: 20px; ">
+            <h2 style="text-align:center">Some thing about me</h2>
+            <p style="font-size: 20px">Hi! This is Yuzhe Wu, you can call me Alan. I come from Shanghai, China.<br>This is my second year in United States and I'm glad to study in Boston University. I am ready to experience diverse cultures. </p>
+        </div>
+
+        <div class="intro" style="float: right; background-color: #f8bc3c; color: #797979; border:2px solid white; padding: 20px;">
+            <h2 style="text-align:center;">Schools and Degrees</h2>
+            <p style="font-size: 20px;">I am currently a graduate student majoring in Electrical and Computer Engineering at Boston University.</p>
+            <a href="https://www.bu.edu/eng/academics/departments-and-divisions/electrical-and-computer-engineering/">Visit the Department of Electrica & Computer Engineering </a>
+        </div>
+
+        <br>
+        <br>
+
+        <div style="background-color: #664441">
+            <h2 style="text-align:center;">Past School</h2>
+            <p style="font-size:20px">I completed my undergraduate studies in Automation at Donghua University, which is located in Shanghai, China. It's a university with beautiful scenery and a good academic atmosphere, built beside a lake. If you'd like to learn more, you can click on the university emblem below to visit the official website.</p>
+
+        </div>
+        <a href="https://english.dhu.edu.cn/">
+            <img src="donghua.png" alt="University Emblem" style="width:200px;height:auto;display:block;margin:auto;">
+        </a>
+
+        <div style="background-color:#f6efe4;">
+            <h2 style="text-align:center;color:black;">Professional goals</h2>
+            <p style="font-size:20px;color:black;">I hope to acquire professional knowledge and project experience at school, to fully hone my academic abilities and work ethic, striving to devote myself to what I love doing in the future.</p>
+        </div>
+
+    </div>
+</body>
+</html>
