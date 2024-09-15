@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            background-image: url('03.jpg');
+            background-size:cover;
+            background-position:center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin:0;
+            padding:0;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding-top: 80px; 
+        }
+
+        nav {
+            background-color: #1f2224;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: #34363b;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #34a58e;
+        }
+
+        .content {
+            width: 60%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #2a2a2e;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .project {
+            background-color: #3c3c3f;
+            border: 2px solid #4a4a4e;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .project h2 {
+            color: #ffffff;
+        }
+
+        .project p {
+            color: #cccccc;
+        }
+
+        .project a {
+            color: #34a58e;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #34363b;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .project a:hover {
+            background-color: #34a58e;
+            color: #ffffff;
+        }
+
+        footer {
+            background-color: #1f2224;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="assignments.html">Assignments</a></li>
+            <li><a href="work-experience.html">Work Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="project">
+            <h2>Project 1: Drowning Detection with YOLOv5 and YOLOv8</h2>
+            <p>Using YOLOv5 and YOLOv8 to primarily train the model to detect drowning people. This project aims to enhance the safety measures around water bodies by deploying a highly accurate and efficient deep learning model.</p>
+            <a href="https://github.com/AlanYuzhe/Project_1" target="_blank">View on GitHub</a>
+        </div>
+
+        <!-- 更多的项目 -->
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Yuzhe Wu. All rights reserved.</p>
+    </footer>
+</body>
+</html>
