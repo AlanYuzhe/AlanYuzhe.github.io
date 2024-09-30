@@ -3,19 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Assignments</title>
     <style>
-        body {
-            background-image: url('03.jpg');
-            background-size:cover;
-            background-position:center;
-            background-repeat: no-repeat;
-            height: 100vh;
-            margin:0;
-            padding:0;
-            font-family: 'Times New Roman', Times, serif;
+        /* Apply a CSS reset to remove default margins and paddings */
+        * {
             margin: 0;
-            padding-top: 80px; 
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Use Flexbox to create a sticky footer layout */
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Times New Roman', Times, serif;
+            background-image: url('03.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
         nav {
@@ -30,8 +39,6 @@
 
         nav ul {
             list-style: none;
-            padding: 0;
-            margin: 0;
             display: flex;
             justify-content: center;
         }
@@ -54,11 +61,13 @@
             background-color: #34a58e;
         }
 
+        /* Flex item that grows to fill available space */
         .content {
+            flex: 1;
             width: 60%;
             margin: 0 auto;
-            padding: 20px;
-            background-color: #2a2a2e;
+            padding: 120px 20px 20px; /* Added top padding to account for fixed navbar */
+            background-color: rgba(42, 42, 46, 0.8); /* Added transparency for background */
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
         }
@@ -102,9 +111,15 @@
             color: #ffffff;
             text-align: center;
             padding: 20px 0;
-            position: fixed;
-            bottom: 0;
+        }
+
+        /* Adjust video responsiveness */
+        .project video {
             width: 100%;
+            height: auto;
+            max-width: 640px;
+            margin-top: 20px;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -133,7 +148,17 @@
             <a href="https://github.com/AlanYuzhe/alanwyz-assignment-1">Github Link</a>
         </div>
 
-        <!-- more assign -->
+        <div class="project">
+            <h2>Assignment 2</h2>
+            <p>In this assignment, I developed a web application that implements the KMeans clustering algorithm with various initialization methods, including Random, Kmeans++, Fartherest First and Manual centroid selection. The project features a Flask backend and a React frontend, allowing users to interactively visualize the clustering process.</p>
+            <video controls>
+                <source src="pre.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <a href="https://github.com/AlanYuzhe/alanwyz-assignment-2">Github Link</a>
+        </div>
+
+        <!-- more assignments -->
     </div>
 
     <footer>
